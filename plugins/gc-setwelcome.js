@@ -6,6 +6,6 @@ m.reply('*[❗] تم تغير الترحيب بشكل صحيح*')
 }
 handler.help = ['setwelcome <text>']
 handler.tags = ['group']
-handler.command = ['setwelcome'] 
+handler.command = ['تغيرالترحيب'] 
 handler.admin = true
 export default handler

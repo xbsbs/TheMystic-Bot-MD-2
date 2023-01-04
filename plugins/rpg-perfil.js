@@ -17,13 +17,13 @@ let str = `*الاسم:* ${username} ${registered ? '(' + name + ') ': ''}
 *الرقم:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 *الرابط:* wa.me/${who.split`@`[0]}${registered ? '\n*السن:* ' + age + ' años' : ''}
 *الحد:* ${limit} 
-*مسجل:* ${registered ? 'نعم': 'نو'}
+*مسجل:* ${registered ? 'نعم': 'لا'}
 *بريميوم:* ${prem ? 'نعم' : 'لا'}
 *الرقم السري:* 
 ${sn}`
-conn.sendButton(m.chat, str, author, pp, [['الاوامر✨', '/menu']], m)
+conn.sendButton(m.chat, str, author, pp, [['الاوامر✨', '.menu']], m)
 }}
 handler.help = ['profile [@user]']
 handler.tags = ['xp']
-handler.command = /^بروفايل|profile?$/i
+handler.command = /^بروفايل|بروفيل?$/i
 export default handler
